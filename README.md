@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TODOアプリ
 
-## Getting Started
+シンプルで使いやすいTODOアプリです。タスクの追加、編集、完了、削除などの基本的な機能を備えています。
 
-First, run the development server:
+## 機能
+
+- タスクの追加（タイトルと詳細）
+- タスクの編集
+- タスクの完了/未完了の切り替え
+- タスクの削除
+- 完了済みタスクの一括削除
+- タスクのフィルタリング（すべて、未完了、完了済み）
+- ダークモード/ライトモードの切り替え
+- ローカルストレージによるデータ永続化
+
+## 技術スタック
+
+- [Next.js](https://nextjs.org/) - Reactフレームワーク
+- [React](https://reactjs.org/) - UIライブラリ
+- [TypeScript](https://www.typescriptlang.org/) - 型付き言語
+- [Tailwind CSS](https://tailwindcss.com/) - CSSフレームワーク
+- [Lucide React](https://lucide.dev/) - アイコンライブラリ
+
+## 始め方
+
+まず、開発サーバーを起動します：
 
 ```bash
 npm run dev
-# or
+# または
 yarn dev
-# or
+# または
 pnpm dev
-# or
+# または
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開くと、アプリケーションが表示されます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 使い方
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. ホームページから「TODOアプリを開く」ボタンをクリックするか、直接 `/todos` にアクセスします。
+2. 「新しいタスクを追加」フィールドにタスク名を入力し、必要に応じて詳細を追加します。
+3. 「追加」ボタンをクリックしてタスクを追加します。
+4. タスクを完了するには、チェックボックスをクリックします。
+5. タスクを編集または削除するには、タスクにカーソルを合わせると表示される編集アイコンまたは削除アイコンをクリックします。
+6. フィルターボタンを使用して、表示するタスクをフィルタリングできます。
+7. 「完了済みをクリア」ボタンをクリックすると、完了済みのタスクをすべて削除できます。
+8. 右上のアイコンをクリックすると、ダークモードとライトモードを切り替えることができます。
 
-## Learn More
+## プロジェクト構造
 
-To learn more about Next.js, take a look at the following resources:
+- `/app` - Next.jsのApp Routerページ
+- `/components` - Reactコンポーネント
+- `/lib` - ユーティリティ関数、型定義、ストア
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ライセンス
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MITライセンス
