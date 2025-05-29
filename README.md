@@ -1,29 +1,8 @@
-# TODOアプリ
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-シンプルで使いやすいTODOアプリです。タスクの追加、編集、完了、削除などの基本的な機能を備えています。
+## はじめに
 
-## 機能
-
-- タスクの追加（タイトルと詳細）
-- タスクの編集
-- タスクの完了/未完了の切り替え
-- タスクの削除
-- 完了済みタスクの一括削除
-- タスクのフィルタリング（すべて、未完了、完了済み）
-- ダークモード/ライトモードの切り替え
-- ローカルストレージによるデータ永続化
-
-## 技術スタック
-
-- [Next.js](https://nextjs.org/) - Reactフレームワーク
-- [React](https://reactjs.org/) - UIライブラリ
-- [TypeScript](https://www.typescriptlang.org/) - 型付き言語
-- [Tailwind CSS](https://tailwindcss.com/) - CSSフレームワーク
-- [Lucide React](https://lucide.dev/) - アイコンライブラリ
-
-## 始め方
-
-まず、開発サーバーを起動します：
+まず、開発サーバーを起動します:
 
 ```bash
 npm run dev
@@ -35,25 +14,33 @@ pnpm dev
 bun dev
 ```
 
-ブラウザで [http://localhost:3000](http://localhost:3000) を開くと、アプリケーションが表示されます。
+ブラウザで [http://localhost:3000](http://localhost:3000) を開くと結果が表示されます。
 
-## 使い方
+`app/page.tsx` を編集することでページの編集を始めることができます。ファイルを編集すると、ページは自動的に更新されます。
 
-1. ホームページから「TODOアプリを開く」ボタンをクリックするか、直接 `/todos` にアクセスします。
-2. 「新しいタスクを追加」フィールドにタスク名を入力し、必要に応じて詳細を追加します。
-3. 「追加」ボタンをクリックしてタスクを追加します。
-4. タスクを完了するには、チェックボックスをクリックします。
-5. タスクを編集または削除するには、タスクにカーソルを合わせると表示される編集アイコンまたは削除アイコンをクリックします。
-6. フィルターボタンを使用して、表示するタスクをフィルタリングできます。
-7. 「完了済みをクリア」ボタンをクリックすると、完了済みのタスクをすべて削除できます。
-8. 右上のアイコンをクリックすると、ダークモードとライトモードを切り替えることができます。
+このプロジェクトは [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) を使用して、Vercelの新しいフォントファミリーである [Geist](https://vercel.com/font) を自動的に最適化して読み込みます。
 
-## プロジェクト構造
+## TODOアプリについて
 
-- `/app` - Next.jsのApp Routerページ
-- `/components` - Reactコンポーネント
-- `/lib` - ユーティリティ関数、型定義、ストア
+このプロジェクトには、シンプルで使いやすいTODOアプリが含まれています。以下の機能があります：
 
-## ライセンス
+- タスクの追加、編集、削除
+- タスクの完了状態の切り替え
+- タスクのフィルタリング（すべて、未完了、完了済み）
+- ローカルストレージを使用したデータの永続化
+- レスポンシブデザイン
 
-MITライセンス
+## もっと学ぶ
+
+Next.jsについてもっと学ぶには、以下のリソースをご覧ください：
+
+- [Next.js Documentation](https://nextjs.org/docs) - Next.jsの機能とAPIについて学びます。
+- [Learn Next.js](https://nextjs.org/learn) - インタラクティブなNext.jsチュートリアルです。
+
+[Next.js GitHub リポジトリ](https://github.com/vercel/next.js)もチェックしてみてください - フィードバックや貢献を歓迎します！
+
+## Vercelへのデプロイ
+
+Next.jsアプリをデプロイする最も簡単な方法は、Next.jsの作成者による[Vercelプラットフォーム](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)を使用することです。
+
+詳細については、[Next.jsデプロイメントドキュメント](https://nextjs.org/docs/app/building-your-application/deploying)をご覧ください。
